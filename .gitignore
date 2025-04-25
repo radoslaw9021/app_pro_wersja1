@@ -1,0 +1,14 @@
+# pliki środowiskowe
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtualenv
+venv/
+env/
+
+# IDE/editor
+.vscode/
+.idea/
