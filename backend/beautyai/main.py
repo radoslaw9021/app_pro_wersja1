@@ -19,7 +19,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# ✅ OAuth2 token (ważne, że jest przed użyciem!)
+# ✅ OAuth2 token
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 # ✅ LOKALNE MODUŁY
@@ -162,6 +162,9 @@ def read_root():
 @app.on_event("startup")
 async def startup_event():
     logger.info("🔄 Inicjalizacja API...")
+    # DEBUG: pokaż, jaką wartość widzi aplikacja w DATABASE_URL
+    logger.info(f"DATABASE_URL = {os.getenv('DATABASE_URL')}")
+
     try:
         Base.metadata.create_all(bind=engine)
         logger.info("✅ Tabele utworzone")
