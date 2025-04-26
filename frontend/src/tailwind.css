@@ -1,0 +1,33 @@
+/* Dodaj poniższe style do swojego głównego pliku CSS lub tailwind.css */
+
+/* Style dla motywu Pink */
+.theme-pink {
+  --color-primary: #fce7f3; /* pink-100 */
+  --color-secondary: #fbcfe8; /* pink-200 */
+  --color-accent: #ec4899; /* pink-500 */
+  --color-text: #831843; /* pink-900 */
+}
+
+/* Style dla motywu Lavender */
+.theme-lavender {
+  --color-primary: #e9d5ff; /* purple-200 */
+  --color-secondary: #f3e8ff; /* purple-100 */
+  --color-accent: #fbbf24; /* amber-400 */
+  --color-text: #581c87; /* purple-900 */
+}
+
+/* Style dla motywu Neutral */
+.theme-neutral {
+  --color-primary: #f3f4f6; /* gray-100 */
+  --color-secondary: #ffffff; /* white */
+  --color-accent: #9ca3af; /* gray-400 */
+  --color-text: #1f2937; /* gray-800 */
+}
+
+/* Możesz używać tych zmiennych CSS w komponentach w następujący sposób: */
+/* background-color: var(--color-primary); */
+/* color: var(--color-text); */
+/* itd. */
+
+/* Jeśli wolisz używać bezpośrednio klas Tailwind, możesz kontynuować korzystanie 
+   z systemu kolorów zdefiniowanego w themeContext.js */
